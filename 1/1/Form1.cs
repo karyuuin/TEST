@@ -20,9 +20,13 @@ namespace _1
         private void button1_Click(object sender, EventArgs e)
         {
             double x;
-            double s = 1.10;
-           x = (s - 1)/2;
-           richTextBox1.Text = x.ToString();
+            string s = textBox1.Text;
+            double d = Convert.ToDouble(s);
+            string r = textBox2.Text;
+            double rr = Convert.ToDouble(r);
+
+            x = (d - rr)/2;
+            richTextBox1.Text = x.ToString();
         }
     }
 }
